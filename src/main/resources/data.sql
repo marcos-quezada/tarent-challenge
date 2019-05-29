@@ -1,8 +1,8 @@
-INSERT INTO product (id, name, sku) VALUES (1, 'Milch', '102');
-INSERT INTO product (id, name, sku) VALUES (2, 'Brot', '2035');
-INSERT INTO product (id, name, sku) VALUES (3, 'Käse', 'S-155');
-INSERT INTO product (id, name, sku) VALUES (4, 'Wurst', '1488');
-INSERT INTO product (id, name, sku) VALUES (5, 'Couscous', 'B001');
+INSERT INTO product (id, name, sku, price) VALUES (1, 'Milch', '102', 1.29);
+INSERT INTO product (id, name, sku, price) VALUES (2, 'Brot', '2035', 0.99);
+INSERT INTO product (id, name, sku, price) VALUES (3, 'Käse', 'S-155', 4.59);
+INSERT INTO product (id, name, sku, price) VALUES (4, 'Wurst', '1488', 5.00);
+INSERT INTO product (id, name, sku, price) VALUES (5, 'Couscous', 'B001', 4.39);
 
 INSERT INTO product_eans (product_id, eans) VALUES (1, '12345678');
 INSERT INTO product_eans (product_id, eans) VALUES (1, '77777777');

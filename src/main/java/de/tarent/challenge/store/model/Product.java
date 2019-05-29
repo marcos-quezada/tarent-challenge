@@ -17,9 +17,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
 @Entity
 public class Product {
 
-    @Id
-    @GeneratedValue(strategy = SEQUENCE)
-    private Long id;
+    private @Id @GeneratedValue(strategy = SEQUENCE) Long id;
 
     @NotNull(message = "Associated SKU is required.")
     @Basic(optional = false)
@@ -46,6 +44,26 @@ public class Product {
         this.sku = sku;
         this.name = name;
         this.price = price;
+        this.eans = eans;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setSku(String sku) {
+        this.sku = sku;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEans(Set<String> eans) {
         this.eans = eans;
     }
 
